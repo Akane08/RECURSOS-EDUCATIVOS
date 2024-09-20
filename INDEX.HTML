@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio Educativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Repositorio de Recursos Educativos</h1>
+        <nav>
+            <ul>
+                <li><a href="#categorias">Categorías</a></li>
+                <li><a href="#areas">Áreas</a></li>
+                <li><a href="#grados">Grados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="categorias">
+        <h2>Categorías</h2>
+        <button onclick="filtrar('documento')">Documentos</button>
+        <button onclick="filtrar('video')">Videos</button>
+        <button onclick="filtrar('audio')">Audios</button>
+        <button onclick="filtrar('imagen')">Imágenes</button>
+        <button onclick="filtrar('software')">Software</button>
+        <button onclick="filtrar('planificacion')">Planificaciones</button>
+    </section>
+
+    <section id="areas">
+        <h2>Áreas</h2>
+        <button onclick="filtrar('lengua')">Lengua Española</button>
+        <button onclick="filtrar('matematicas')">Matemáticas</button>
+        <button onclick="filtrar('ciencias')">Ciencias de la Naturaleza</button>
+        <button onclick="filtrar('sociales')">Ciencias Sociales</button>
+        <button onclick="filtrar('ingles')">Inglés</button>
+    </section>
+
+    <section id="grados">
+        <h2>Grados</h2>
+        <button onclick="filtrar('primero')">Primero de Primaria</button>
+        <button onclick="filtrar('segundo')">Segundo de Primaria</button>
+        <button onclick="filtrar('tercero')">Tercero de Primaria</button>
+        <button onclick="filtrar('cuarto')">Cuarto de Primaria</button>
+    </section>
+
+    <section id="recursos">
+        <h2>Recursos Disponibles</h2>
+        <div class="recurso" data-categoria="documento" data-area="lengua" data-grado="primero">
+            <h3>Documento: Lectura Comprensiva</h3>
+            <p>Área: Lengua Española - Grado: Primero de Primaria</p>
+        </div>
+        <div class="recurso" data-categoria="video" data-area="matematicas" data-grado="segundo">
+            <h3>Video: Sumas y Restas Básicas</h3>
+            <p>Área: Matemáticas - Grado: Segundo de Primaria</p>
+        </div>
+        <!-- Agrega más recursos de la misma manera -->
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
